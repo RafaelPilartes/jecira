@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Caveat|Pacifico&display=swap&subset=latin-ext');
+
+body {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+h2,
+h1 {
+  font-family: 'Lora', serif;
+}
+
+.heart {
+  fill: red;
+  position: relative;
+  top: 5px;
+  width: 70px;
+  animation: pulse 1s ease infinite;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.letter {
+  background-color: #e7dcde;
+  width: 400px;
+  padding: 48px;
+  position: relative;
+  max-width: 90vw;
+  margin: 5vh auto;
+  border-radius: 15px;
+  border: 2px solid #6e4667;
+}
+
+.parrafo {
+  text-align: justify;
+}
+
+.letter {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.main-title {
+  font-family: 'Pacifico', cursive;
+}
+p {
+  font-size: 22px;
+  font-family: 'Caveat', cursive;
+}
+.giphy-embed {
+  pointer-events: none;
+  padding: 1px;
+  position: relative;
+}
+
+.open-modal {
+  text-align: center !important;
+}

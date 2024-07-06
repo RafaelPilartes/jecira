@@ -1,0 +1,229 @@
+body {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  background-image: url('images/bg_pink.png');
+}
+
+.all {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+.top-side{
+  position: absolute;
+  background: red;
+  height: 446px;
+  width: 100px;
+  top: -50px;
+  left: -105px;
+  transform: skew(0, 45deg);
+  border: 2px solid black;
+  background: linear-gradient(180deg, #1A1B1F, #5A6074);
+}
+.left-side{
+  position: absolute;
+  background: green;
+  width: 702px;
+  height: 100px;
+  top: -104px;
+  left: -55px;
+  transform: skew(45deg, 0);
+  border: 2px solid black;
+  background: linear-gradient(180deg, #1A1B1F, #5A6074);
+}
+
+.main{
+  height: 450px;
+  width: 700px;
+  background: linear-gradient(180deg, #1A1B1F, #5A6074);
+}
+.main-area {
+  height: 450px;
+  width: 700px;
+/*   overflow: hidden; */
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  border: 2px solid black;
+}
+.slider {
+  450px;
+  width: 700px;
+  display: flex;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+.thif {
+  height: 350px;
+  width: 600px;
+  background: linear-gradient(180deg, #1E1F26, #5A6074);
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 2px solid black;
+  position: absolute;
+  transition: all ease 9s;
+}
+.i-love-you {
+  height: 354px;
+  width: 604px;
+  background: linear-gradient(180deg, #1E1F26, #5A6074);;
+  transition: all ease 10s;
+  position: absolute;
+/*   z-index: 99; */
+  display: flex;
+  overflow: hidden;
+ 
+}
+#love-message{
+  height: 300px;
+  border-radius: 50%;
+  transition: 5s ease-in-out;
+  position: absolute;
+   top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  scale: 0.96;
+  transition: linear 0.6s;
+}
+#love-message:hover {
+  box-shadow: 0 0 15px black inset;
+  cursor: pointer;
+  scale: 1;
+  box-shadow:
+   0 10px rgba(255,255,255,.2) inset,
+   0 20px 30px rgba(0,1,6,.5),
+   0 0 10px 10px rgba(0,1,6,.2);
+  transition: linear 0.6s;
+}
+#love-message:active {
+  margin-top: 5px;
+  box-shadow:
+   0 0 10px rgba(0,0,0,.5) inset,
+   0 10px 25px rgba(0,0,0,.5) inset,
+   0 10px 10px rgba(255,255,255,.1);
+}
+.lock-outside {
+  width: 120px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #585D71;
+  border-radius: 50%;
+  margin-top: -190px;
+  transform: rotate(90deg);
+  box-shadow:
+   0 0 5px #1D1E22 inset,
+   0 0 5px #1D1E22;
+  
+}
+.lock {
+  width: 80px;
+  height: 80px;
+  background: #1E1F26;
+  border-radius: 50%;
+  box-shadow:
+   0 0 15px #1D1E22 inset,
+}
+.lock-inside{
+  height: 30px;
+  width: 103%;
+  background: #585D71;
+  margin-top: 25px;
+  margin-left: -1px;
+}
+.pin-put {
+  width: 150px;
+  height: 250px;
+  background: #1E1F26;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  font-family: Impact, fantasy;
+  box-shadow: 0 0 10px #1E1F26;
+}
+.pin {
+  width: 120px;
+  height: 30px;
+  background: white;
+  padding: 5px;
+  margin-top: 10px;
+  border-radius: 3px;
+}
+.buttons-area{
+  display: flex;
+  flex-wrap: wrap
+}
+.button{
+  width: 10px;
+  height: 10px;
+  background: white;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  background: linear-gradient(rgb(110,112,120), rgb(81,81,86)) rgb(110,112,120);
+  box-shadow:
+   0 1px rgba(255,255,255,.2) inset,
+   0 3px 5px rgba(0,1,6,.5),
+   0 0 1px 1px rgba(0,1,6,.2);
+  transition: .2s ease-in-out;
+}
+.button:hover:not(:active) {
+  background: linear-gradient(rgb(126,126,134), rgb(70,71,76)) rgb(126,126,134);
+  cursor: pointer;
+}
+.button:active {
+  top: 1px;
+  background: linear-gradient(rgb(76,77,82), rgb(56,57,62)) rgb(76,77,82);
+  box-shadow:
+   0 0 1px rgba(0,0,0,.5) inset,
+   0 1px 2px rgba(0,0,0,.5) inset,
+   0 1px 1px rgba(255,255,255,.1);
+}
+.button img {
+  height: 15px;
+}
+.ps {
+  width: 150px;
+  height: 100px;
+  background: #E9D9BE;
+  margin-top: -170px;
+  transform: rotate(15deg);
+  font-family: Brush Script MT, Brush Script Std, cursive;
+  box-shadow: 0 0 10px black;
+}
+.ps img {
+  height: 50px;
+  margin-top: -15px;
+  margin-left: -15px;
+}
+.ps p {
+  margin: 10px;
+  margin-top: -15px;
+}
+#say-love {
+  font-family: Impact, fantasy;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#say-love img {
+  height: 25px;
+}
