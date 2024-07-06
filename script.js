@@ -54,9 +54,7 @@ back.onclick = () => {
 
 let message = document.getElementById('love-message')
 message.onclick = () => {
-  var audio = new Audio('music.mp4')
-  audio.play()
-  // window.location.href = 'card.html'
+  window.location.href = 'card.html'
   // message.style.opacity = '0'
   // message.style.transition = '3s all'
 }
