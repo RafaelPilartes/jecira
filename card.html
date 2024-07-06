@@ -14,29 +14,52 @@
     <div class="content">
       <div class="letter">
         <div class="intro">
+          <button
+            id="playButton"
+            style="background-color: transparent; border: none"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="50"
+              height="50"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="red"
+                d="M12 21.35L10.55 20.3C4.9 15.36 2 12.29 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C15.09 3.81 16.76 3 18.5 3 21.58 3 24 5.42 24 8.5c0 3.79-2.9 6.86-8.55 11.3L12 21.35z"
+              />
+            </svg>
+          </button>
           <h2 class="main-title">❤️🧬 Para a minha vida 🧬❤️</h2>
           <p class="parrafo">
             Como falar da <b>Jecira Varela</b>?? <br />
+            Ela tem um coração generoso e um jeito único de cuidar das pessoas
+            que ama. Nos nossos momentos juntos, ela sempre encontra uma maneira
+            de tornar cada dia especial.
             <br />
-            Mesmo sabendo que nem sempre é fácil para você, quero aproveitar
-            esta oportunidade para lembrar o quanto você significa para mim e
-            para todos ao seu redor.
+            É nos momentos mais simples que ela demonstra todo o seu cuidado e
+            amor, seja preparando uma refeição especial, compartilhando uma
+            conversa sincera ou simplesmente estando presente com um sorriso
+            acolhedor. Sua capacidade de transformar o ordinário em algo
+            extraordinário é uma das muitas razões pelas quais me sinto tão
+            abençoado por tê-la ao meu lado.
             <br />
-            Você é uma daquelas pessoas raras que fazem o mundo parecer um lugar
-            melhor só por estar nele. Sua bondade é contagiante, sua força é
-            admirável e a forma como ilumina a vida de quem cruza seu caminho é
-            incrível.
-            <br /><br />
+            <br />
+            <b>
+              Mesmo sabendo que nem sempre é fácil para você, quero aproveitar
+              esta oportunidade para lembrar o quanto você significa para mim e
+              para todos ao seu redor.
+            </b>
+            <br />
             Estou aqui para você, sempre. Nos dias bons e ruins, nas alegrias e
             tristezas. Quando a insegurança bater, lembre-se das razões pelas
             quais me apaixonei por você. Você é única, especial, e sou
             eternamente grato por tê-la em minha vida.
             <br /><br />
-            Quem diria que, mesmo com nossas brincadeiras e provocações, nosso
-            amor só cresceria? Você transforma qualquer momento em algo
-            inesquecível, até mesmo quando estamos apenas nos provocando e
-            fazendo besteiras. 😂❤ Cada risada, cada conversa, cada "eu te amo"
-            só reforça o quanto sou sortudo por ter você ao meu lado. 🌟
+            Quando penso em nós dois, mesmo com nossas brincadeiras e
+            provocações, vejo como nosso amor cresce a cada dia. Você traz
+            alegria e cor para a minha vida, e cada momento ao seu lado é uma
+            bênção que valorizo profundamente 🌟
             <br /><br />
             Dizer que te amo de milhões ainda é pouco perto do que sinto por
             você. 💞 Imaginar minha vida sem você me deixa sem chão. Sem você,
@@ -80,9 +103,15 @@
       </div>
     </div>
 
+    <!-- <audio id="minhaMusica" src="music.mp3" autoplay loop></audio> -->
+
     <script>
-      window.addEventListener('load', function () {
-        var audio = new Audio('.mp3')
+      alert('Click no coração ❤️ Vida')
+
+      var audio = new Audio('music.mp3')
+      var playButton = document.getElementById('playButton')
+
+      playButton.addEventListener('click', function () {
         audio.play()
       })
     </script>
